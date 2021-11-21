@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4BAA4149-DA33-4636-BA0B-4D033814A9C1"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A89C406-32C7-40CE-891B-0FAACA16FE10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitTrendsTests/Mocks/MockNetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "request(endpoint:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A89C406-32C7-40CE-891B-0FAACA16FE10 - 9d6f17f3f6ff639a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitTrendsUITests.MockNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: GitTrendsUITests.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitTrendsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrendsTests/Mocks/MockNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1806">
+               </Location>
+               <Location
+                  uuid = "1A89C406-32C7-40CE-891B-0FAACA16FE10 - 96c0ee6f1cf8b7ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitTrendsTests.MockNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: GitTrendsTests.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitTrendsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrendsTests/Mocks/MockNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1806">
+               </Location>
+               <Location
+                  uuid = "1A89C406-32C7-40CE-891B-0FAACA16FE10 - 96c0ee6f1cf8b7ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitTrendsTests.MockNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: GitTrendsTests.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitTrendsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrendsTests/Mocks/MockNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1836">
+               </Location>
+               <Location
+                  uuid = "1A89C406-32C7-40CE-891B-0FAACA16FE10 - 9d6f17f3f6ff639a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitTrendsUITests.MockNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: GitTrendsUITests.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitTrendsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrendsTests/Mocks/MockNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1836">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30B09983-E325-4E36-938B-41E658B56650"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitTrendsTests/Mocks/MockNetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "request(endpoint:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "30B09983-E325-4E36-938B-41E658B56650 - e878121b930531bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in GitTrendsTests.MockNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: GitTrendsTests.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitTrendsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrendsTests/Mocks/MockNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "339">
+               </Location>
+               <Location
+                  uuid = "30B09983-E325-4E36-938B-41E658B56650 - 6942d7ac3e82c159"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in GitTrendsUITests.MockNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(endpoint: GitTrendsUITests.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GitTrendsUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrendsTests/Mocks/MockNetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
