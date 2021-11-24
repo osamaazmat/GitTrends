@@ -33,8 +33,7 @@ class TrendsListingTests: XCTestCase {
 extension TrendsListingTests {
     
     func testGitTrendsApi() {
-        var endpoint = GitHubEndpoint()
-        endpoint.endpointType = .getTrendingGitRepos
+        var endpoint = GitHubEndpoint(endpointType: .getTrendingGitRepos)
         endpoint.mockObjectFileName = TrendsListingTestsFileNames.trendingGitRepoSuccessResponse.rawValue
         
         let networkManager = MockNetworkManager()

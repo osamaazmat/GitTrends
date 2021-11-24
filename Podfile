@@ -7,6 +7,10 @@ target 'GitTrends' do
 
   # Pods for GitTrends
 
+  pod 'lottie-ios'
+  pod 'SDWebImage', '~> 5.0'
+  pod "SkeletonView"
+
   target 'GitTrendsTests' do
     inherit! :search_paths
     # Pods for testing

@@ -15,7 +15,11 @@ enum GitHubEndpointType {
 
 struct GitHubEndpoint: Endpoint {
     
-    var endpointType: GitHubEndpointType = .getTrendingGitRepos
+    private var endpointType: GitHubEndpointType = .getTrendingGitRepos
+    
+    init(endpointType: GitHubEndpointType) {
+        self.endpointType = endpointType
+    }
     
     var scheme: String {
         switch endpointType {

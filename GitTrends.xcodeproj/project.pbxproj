@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7964AABBD4093A1C2DEF2D27 /* Pods_GitTrends_GitTrendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3B8BF29F9E846014C4ED89 /* Pods_GitTrends_GitTrendsUITests.framework */; };
+		BF5E7DF1274EDE90004CB2D5 /* retry_json.json in Resources */ = {isa = PBXBuildFile; fileRef = BF5E7DF0274EDE90004CB2D5 /* retry_json.json */; };
 		BF8DA68A2748FCCD00839B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DA6892748FCCD00839B00 /* AppDelegate.swift */; };
 		BF8DA68C2748FCCD00839B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DA68B2748FCCD00839B00 /* SceneDelegate.swift */; };
 		BF8DA6932748FCCE00839B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8DA6922748FCCE00839B00 /* Assets.xcassets */; };
@@ -39,6 +40,17 @@
 		BF8DA6E1274A361400839B00 /* TrendingGitRepoSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BF8DA6DF274A361400839B00 /* TrendingGitRepoSuccessResponse.json */; };
 		BF8DA6E4274A366600839B00 /* TrendsListingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DA6E3274A366600839B00 /* TrendsListingTests.swift */; };
 		BF8DA6E5274A366600839B00 /* TrendsListingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DA6E3274A366600839B00 /* TrendsListingTests.swift */; };
+		BF8FE64C274D225400B15C6F /* TrendsListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */; };
+		BF8FE64E274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */; };
+		BF8FE64F274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */; };
+		BF8FE650274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */; };
+		BF8FE656274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */; };
+		BF8FE657274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */; };
+		BF8FE658274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */; };
+		BF8FE659274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */; };
+		BF8FE65A274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */; };
+		BF8FE65B274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */; };
+		BF8FE676274ED5F600B15C6F /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */; };
 		DF1D9EEFA0387F6EB342EF18 /* Pods_GitTrendsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC36854D09B4143BEC9C413D /* Pods_GitTrendsTests.framework */; };
 		E41F34878F5ACE6CBB684824 /* Pods_GitTrends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E363DA791EC0657DE372C644 /* Pods_GitTrends.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +78,7 @@
 		61BB7B231C3C481984BCC19E /* Pods-GitTrendsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTrendsTests.debug.xcconfig"; path = "Target Support Files/Pods-GitTrendsTests/Pods-GitTrendsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8641E8A66008D069B45D8CD1 /* Pods-GitTrends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTrends.debug.xcconfig"; path = "Target Support Files/Pods-GitTrends/Pods-GitTrends.debug.xcconfig"; sourceTree = "<group>"; };
 		8C4BDE75749FA13BD528AFBC /* Pods-GitTrendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTrendsTests.release.xcconfig"; path = "Target Support Files/Pods-GitTrendsTests/Pods-GitTrendsTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF5E7DF0274EDE90004CB2D5 /* retry_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = retry_json.json; sourceTree = "<group>"; };
 		BF8DA6862748FCCD00839B00 /* GitTrends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTrends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8DA6892748FCCD00839B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF8DA68B2748FCCD00839B00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +99,11 @@
 		BF8DA6DB274A351400839B00 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		BF8DA6DF274A361400839B00 /* TrendingGitRepoSuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrendingGitRepoSuccessResponse.json; sourceTree = "<group>"; };
 		BF8DA6E3274A366600839B00 /* TrendsListingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingTests.swift; sourceTree = "<group>"; };
+		BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingViewModel.swift; sourceTree = "<group>"; };
+		BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingDataSource.swift; sourceTree = "<group>"; };
+		BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingTableViewCell.swift; sourceTree = "<group>"; };
+		BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendsListingTableViewCell.xib; sourceTree = "<group>"; };
+		BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EXT.swift"; sourceTree = "<group>"; };
 		CB3B8BF29F9E846014C4ED89 /* Pods_GitTrends_GitTrendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitTrends_GitTrendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC36854D09B4143BEC9C413D /* Pods_GitTrendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitTrendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E363DA791EC0657DE372C644 /* Pods_GitTrends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitTrends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +146,14 @@
 				CC36854D09B4143BEC9C413D /* Pods_GitTrendsTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF5E7DEF274EDB18004CB2D5 /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E7DF0274EDE90004CB2D5 /* retry_json.json */,
+			);
+			path = LottieFiles;
 			sourceTree = "<group>";
 		};
 		BF8DA67D2748FCCD00839B00 = {
@@ -196,6 +222,7 @@
 		BF8DA6BB2748FDFB00839B00 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -203,6 +230,7 @@
 		BF8DA6BC2748FE0900839B00 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BF5E7DEF274EDB18004CB2D5 /* LottieFiles */,
 				BF8DA6972748FCCE00839B00 /* Info.plist */,
 				BF8DA6922748FCCE00839B00 /* Assets.xcassets */,
 			);
@@ -233,6 +261,10 @@
 			children = (
 				BF8DA6C02748FED100839B00 /* TrendsListingViewController.swift */,
 				BF8DA6C12748FED100839B00 /* TrendsListingViewController.xib */,
+				BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */,
+				BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */,
+				BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */,
+				BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */,
 			);
 			path = Listing;
 			sourceTree = "<group>";
@@ -302,6 +334,7 @@
 				BF8DA6822748FCCD00839B00 /* Sources */,
 				BF8DA6832748FCCD00839B00 /* Frameworks */,
 				BF8DA6842748FCCD00839B00 /* Resources */,
+				084277D20CF212D37A5E51A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +372,7 @@
 				BF8DA6A22748FCCE00839B00 /* Sources */,
 				BF8DA6A32748FCCE00839B00 /* Frameworks */,
 				BF8DA6A42748FCCE00839B00 /* Resources */,
+				3D6149ADB6B45EDF83AC6121 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +432,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8FE659274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */,
+				BF5E7DF1274EDE90004CB2D5 /* retry_json.json in Resources */,
 				BF8DA6C52748FED100839B00 /* TrendsListingViewController.xib in Resources */,
 				BF8DA6962748FCCE00839B00 /* LaunchScreen.storyboard in Resources */,
 				BF8DA6932748FCCE00839B00 /* Assets.xcassets in Resources */,
@@ -408,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8FE65A274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */,
 				BF8DA6C62748FED100839B00 /* TrendsListingViewController.xib in Resources */,
 				BF8DA6E0274A361400839B00 /* TrendingGitRepoSuccessResponse.json in Resources */,
 			);
@@ -417,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8FE65B274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */,
 				BF8DA6C72748FED100839B00 /* TrendsListingViewController.xib in Resources */,
 				BF8DA6E1274A361400839B00 /* TrendingGitRepoSuccessResponse.json in Resources */,
 			);
@@ -425,6 +463,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		084277D20CF212D37A5E51A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitTrends/Pods-GitTrends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitTrends/Pods-GitTrends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitTrends/Pods-GitTrends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D6149ADB6B45EDF83AC6121 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitTrends-GitTrendsUITests/Pods-GitTrends-GitTrendsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitTrends-GitTrendsUITests/Pods-GitTrends-GitTrendsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitTrends-GitTrendsUITests/Pods-GitTrends-GitTrendsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8CFFC0D0F6C6541311871B27 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -502,8 +574,12 @@
 				BF8DA6C22748FED100839B00 /* TrendsListingViewController.swift in Sources */,
 				BF8DA68A2748FCCD00839B00 /* AppDelegate.swift in Sources */,
 				BF8DA6D727490E8900839B00 /* GitHubRepoModel.swift in Sources */,
+				BF8FE656274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */,
 				BF8DA6CF27490E5500839B00 /* GitHubEndpoint.swift in Sources */,
+				BF8FE64C274D225400B15C6F /* TrendsListingViewModel.swift in Sources */,
 				BF8DA68C2748FCCD00839B00 /* SceneDelegate.swift in Sources */,
+				BF8FE64E274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */,
+				BF8FE676274ED5F600B15C6F /* UIColor+EXT.swift in Sources */,
 				BF8DA6CB27490DF700839B00 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,9 +592,11 @@
 				BF8DA6D027490E5500839B00 /* GitHubEndpoint.swift in Sources */,
 				BF8DA6A12748FCCE00839B00 /* GitTrendsTests.swift in Sources */,
 				BF8DA6D427490E5B00839B00 /* NetworkManager.swift in Sources */,
+				BF8FE657274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */,
 				BF8DA6D227490E5800839B00 /* Endpoint.swift in Sources */,
 				BF8DA6DC274A351400839B00 /* MockNetworkManager.swift in Sources */,
 				BF8DA6D827490E8900839B00 /* GitHubRepoModel.swift in Sources */,
+				BF8FE64F274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */,
 				BF8DA6C32748FED100839B00 /* TrendsListingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +610,8 @@
 				BF8DA6DD274A351400839B00 /* MockNetworkManager.swift in Sources */,
 				BF8DA6AB2748FCCE00839B00 /* GitTrendsUITests.swift in Sources */,
 				BF8DA6D927490E8900839B00 /* GitHubRepoModel.swift in Sources */,
+				BF8FE650274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */,
+				BF8FE658274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */,
 				BF8DA6AD2748FCCE00839B00 /* GitTrendsUITestsLaunchTests.swift in Sources */,
 				BF8DA6D127490E5500839B00 /* GitHubEndpoint.swift in Sources */,
 				BF8DA6D327490E5900839B00 /* Endpoint.swift in Sources */,
