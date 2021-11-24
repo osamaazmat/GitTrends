@@ -46,8 +46,9 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5R-gI-5Fu">
                                     <rect key="frame" x="331" y="0.0" width="83" height="40"/>
+                                    <color key="tintColor" systemColor="labelColor"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="gittrends_menu_icon"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="menu_icon" imagePadding="0.0"/>
                                     <connections>
                                         <action selector="onPressMenuBtn:" destination="-1" eventType="touchUpInside" id="KTZ-Ub-XAA"/>
                                     </connections>
@@ -142,7 +143,10 @@
         </view>
     </objects>
     <resources>
-        <image name="gittrends_menu_icon" width="33" height="33"/>
+        <image name="menu_icon" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
