@@ -18,3 +18,14 @@ class MockViewControllerFactory: ControllerFactoryProtocol {
         return trendsListingVC
     }
 }
+
+class MockViewControllerFaliureFactory: ControllerFactoryProtocol {
+    
+    func makeTrendsListingViewController() -> TrendsListingViewController {
+        let networkManager = MockNetworkManagerFailure()
+        let trendsListingVC = TrendsListingViewController.init()
+        let trendsListingViewModel = TrendsListingViewModel(networkManager: networkManager, delegate: trendsListingVC)
+        trendsListingVC.trendsListingViewModel = trendsListingViewModel
+        return trendsListingVC
+    }
+}

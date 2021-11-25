@@ -86,4 +86,109 @@ extension TrendsListingTests {
         trendsListingVC.hideRetryView()
         XCTAssert(trendsListingVC.retryView.isHidden == true)
     }
+    
+    func testListingVCPullToRefreshSuccess() {
+        trendsListingVC.refresh(UIRefreshControl())
+        
+        let exp = expectation(description: "Test after 2 seconds")
+        let result = XCTWaiter.wait(for: [exp], timeout: 2.0)
+        if result == XCTWaiter.Result.timedOut {
+            XCTAssert(trendsListingVC.trendsListingViewModel.gitHubRepoData.items.count > 0)
+        } else {
+            XCTFail("Test Failed")
+        }
+    }
+    
+    func testListingVCOnPressRetryBtn() {
+        trendsListingVC.onPressRetryBtn(UIButton())
+        
+        let exp = expectation(description: "Test after 2 seconds")
+        let result = XCTWaiter.wait(for: [exp], timeout: 2.0)
+        if result == XCTWaiter.Result.timedOut {
+            XCTAssert(trendsListingVC.trendsListingViewModel.gitHubRepoData.items.count > 0)
+        } else {
+            XCTFail("Test Failed")
+        }
+    }
+    
+}
+    
+// MARK: - TableView Tests
+extension TrendsListingTests {
+    
+    func testTableViewNumberOfRows() {
+        trendsListingVC.shouldAnimate = true
+        var countNumberOfRows = trendsListingVC.tableView(trendsListingVC.tableView, numberOfRowsInSection: 0)
+        XCTAssert(countNumberOfRows == 10)
+        
+        
+        trendsListingVC.trendsListingViewModel.getTrendsRepositories()
+        
+        let exp = expectation(description: "Test after 2 seconds")
+        let result = XCTWaiter.wait(for: [exp], timeout: 2.0)
+        if result == XCTWaiter.Result.timedOut {
+            trendsListingVC.shouldAnimate = false
+            countNumberOfRows = trendsListingVC.tableView(trendsListingVC.tableView, numberOfRowsInSection: 0)
+            XCTAssert(countNumberOfRows == trendsListingVC.trendsListingViewModel.gitHubRepoData.items.count)
+        } else {
+            XCTFail("Test Failed")
+        }
+    }
+    
+    func testTableViewCellForRowAt() {
+        
+        let cell = trendsListingVC.tableView(trendsListingVC.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
+        XCTAssertNotNil(cell)
+    }
+    
+    func testTableViewDidSelectRow() {
+        trendsListingVC.tableView(trendsListingVC.tableView, didSelectRowAt: IndexPath(item: 0, section: 0))
+        if let currentCell = trendsListingVC.tableView.cellForRow(at: IndexPath(item: 0, section: 0)) as? TrendsListingTableViewCell {
+            XCTAssert(currentCell.extraInfoView.isHidden == false)
+        }
+        
+        trendsListingVC.tableView(trendsListingVC.tableView, didSelectRowAt: IndexPath(item: 0, section: 0))
+        if let currentCell = trendsListingVC.tableView.cellForRow(at: IndexPath(item: 0, section: 0)) as? TrendsListingTableViewCell {
+            XCTAssert(currentCell.mainDescLabel.text == trendsListingVC.trendsListingViewModel.gitHubRepoData.items[0].fullName)
+        }
+    }
+}
+    
+// MARK: - Failure API Tests
+extension TrendsListingTests {
+    func testListingVCPullToRefreshFail() {
+        
+        let mockVCFactory = MockViewControllerFaliureFactory()
+        trendsListingVC = mockVCFactory.makeTrendsListingViewController()
+        trendsListingVC.loadViewIfNeeded()
+        trendsListingVC.beginAppearanceTransition(true, animated: false)
+        
+        let exp = expectation(description: "Test after 2 seconds")
+        let result = XCTWaiter.wait(for: [exp], timeout: 2.0)
+        if result == XCTWaiter.Result.timedOut {
+            XCTAssert(trendsListingVC.trendsListingViewModel.gitHubRepoData == nil)
+            XCTAssert(trendsListingVC.retryView.isHidden == false)
+        } else {
+            XCTFail("Test Failed")
+        }
+    }
+    
+    func testListingVCOnPressRetryBtnFail() {
+        
+        let mockVCFactory = MockViewControllerFaliureFactory()
+        trendsListingVC = mockVCFactory.makeTrendsListingViewController()
+        trendsListingVC.loadViewIfNeeded()
+        trendsListingVC.beginAppearanceTransition(true, animated: false)
+        
+        trendsListingVC.retryButton.sendActions(for: .touchDown)
+        
+        let exp = expectation(description: "Test after 2 seconds")
+        let result = XCTWaiter.wait(for: [exp], timeout: 2.0)
+        if result == XCTWaiter.Result.timedOut {
+            XCTAssert(trendsListingVC.trendsListingViewModel.gitHubRepoData == nil)
+            XCTAssert(trendsListingVC.retryView.isHidden == false)
+        } else {
+            XCTFail("Test Failed")
+        }
+    }
 }

@@ -49,9 +49,6 @@
                                     <color key="tintColor" systemColor="labelColor"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="menu_icon" imagePadding="0.0"/>
-                                    <connections>
-                                        <action selector="onPressMenuBtn:" destination="-1" eventType="touchUpInside" id="KTZ-Ub-XAA"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>

@@ -93,10 +93,6 @@ extension TrendsListingViewController {
         self.trendsListingViewModel.getTrendsRepositories()
     }
     
-    @IBAction func onPressMenuBtn(_ sender: Any) {
-        
-    }
-    
     @IBAction func onPressRetryBtn(_ sender: Any) {
         hideRetryView()
         self.trendsListingViewModel.getTrendsRepositories()
@@ -108,7 +104,7 @@ extension TrendsListingViewController: TrendsListingViewModelDelegate {
     func successResponse(withData: GitHubRepoModel) {
         DispatchQueue.main.async {
             self.hideRetryView()
-            self.shouldAnimate      = false
+            self.shouldAnimate = false
             
             self.trendsListingViewModel.setupLocalDataStash()
             self.refreshControl.endRefreshing()

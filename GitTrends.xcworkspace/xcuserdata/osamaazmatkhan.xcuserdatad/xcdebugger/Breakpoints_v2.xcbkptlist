@@ -3,4 +3,54 @@
    uuid = "4BAA4149-DA33-4636-BA0B-4D033814A9C1"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBE40EAA-FD39-41E4-9BC4-057C7839B14E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitTrends/Sections/Listing/ViewController/TrendsListingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BBE40EAA-FD39-41E4-9BC4-057C7839B14E - 1ef1df6e7a1b3939"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitTrends.TrendsListingViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "GitTrends"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrends/Sections/Listing/ViewController/TrendsListingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "BBE40EAA-FD39-41E4-9BC4-057C7839B14E - 3f8771b2ee3df161"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitTrendsTests.TrendsListingViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "GitTrendsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/osamaazmatkhan/Developer/Learning/Learning%20Projects/GitTrends/GitTrends/Sections/Listing/ViewController/TrendsListingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
