@@ -41,9 +41,6 @@
 		BF8DA6E4274A366600839B00 /* TrendsListingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DA6E3274A366600839B00 /* TrendsListingTests.swift */; };
 		BF8DA6E5274A366600839B00 /* TrendsListingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8DA6E3274A366600839B00 /* TrendsListingTests.swift */; };
 		BF8FE64C274D225400B15C6F /* TrendsListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */; };
-		BF8FE64E274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */; };
-		BF8FE64F274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */; };
-		BF8FE650274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */; };
 		BF8FE656274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */; };
 		BF8FE657274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */; };
 		BF8FE658274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */; };
@@ -51,6 +48,15 @@
 		BF8FE65A274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */; };
 		BF8FE65B274D2A8000B15C6F /* TrendsListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */; };
 		BF8FE676274ED5F600B15C6F /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */; };
+		BFB5011F274F579000735673 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5011E274F579000735673 /* ViewControllerFactory.swift */; };
+		BFB50125274F670300735673 /* MockViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50124274F670300735673 /* MockViewControllerFactory.swift */; };
+		BFB50126274F67AA00735673 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5011E274F579000735673 /* ViewControllerFactory.swift */; };
+		BFB50127274F67AA00735673 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5011E274F579000735673 /* ViewControllerFactory.swift */; };
+		BFB50128274F67B800735673 /* TrendsListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */; };
+		BFB50129274F67B900735673 /* TrendsListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */; };
+		BFB5012A274F694300735673 /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */; };
+		BFB5012B274F694300735673 /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */; };
+		BFB5012C274F699900735673 /* MockViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB50124274F670300735673 /* MockViewControllerFactory.swift */; };
 		DF1D9EEFA0387F6EB342EF18 /* Pods_GitTrendsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC36854D09B4143BEC9C413D /* Pods_GitTrendsTests.framework */; };
 		E41F34878F5ACE6CBB684824 /* Pods_GitTrends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E363DA791EC0657DE372C644 /* Pods_GitTrends.framework */; };
 /* End PBXBuildFile section */
@@ -100,10 +106,11 @@
 		BF8DA6DF274A361400839B00 /* TrendingGitRepoSuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TrendingGitRepoSuccessResponse.json; sourceTree = "<group>"; };
 		BF8DA6E3274A366600839B00 /* TrendsListingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingTests.swift; sourceTree = "<group>"; };
 		BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingViewModel.swift; sourceTree = "<group>"; };
-		BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingDataSource.swift; sourceTree = "<group>"; };
 		BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsListingTableViewCell.swift; sourceTree = "<group>"; };
 		BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendsListingTableViewCell.xib; sourceTree = "<group>"; };
 		BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EXT.swift"; sourceTree = "<group>"; };
+		BFB5011E274F579000735673 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		BFB50124274F670300735673 /* MockViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewControllerFactory.swift; sourceTree = "<group>"; };
 		CB3B8BF29F9E846014C4ED89 /* Pods_GitTrends_GitTrendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitTrends_GitTrendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC36854D09B4143BEC9C413D /* Pods_GitTrendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitTrendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E363DA791EC0657DE372C644 /* Pods_GitTrends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitTrends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,7 +229,8 @@
 		BF8DA6BB2748FDFB00839B00 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */,
+				BFB5011D274F577800735673 /* Factories */,
+				BFB5011C274F575900735673 /* Extensions */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -259,12 +267,9 @@
 		BF8DA6BF2748FEA000839B00 /* Listing */ = {
 			isa = PBXGroup;
 			children = (
-				BF8DA6C02748FED100839B00 /* TrendsListingViewController.swift */,
-				BF8DA6C12748FED100839B00 /* TrendsListingViewController.xib */,
-				BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */,
-				BF8FE64D274D289C00B15C6F /* TrendsListingDataSource.swift */,
-				BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */,
-				BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */,
+				BFB50123274F668500735673 /* ViewModel */,
+				BFB50122274F667200735673 /* ViewController */,
+				BFB50120274F663B00735673 /* View */,
 			);
 			path = Listing;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8DA6DB274A351400839B00 /* MockNetworkManager.swift */,
+				BFB50124274F670300735673 /* MockViewControllerFactory.swift */,
 				BF8DA6DE274A35D800839B00 /* Json */,
 			);
 			path = Mocks;
@@ -308,6 +314,48 @@
 				BF8DA6E3274A366600839B00 /* TrendsListingTests.swift */,
 			);
 			path = ListingTests;
+			sourceTree = "<group>";
+		};
+		BFB5011C274F575900735673 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FE675274ED5F500B15C6F /* UIColor+EXT.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFB5011D274F577800735673 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				BFB5011E274F579000735673 /* ViewControllerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		BFB50120274F663B00735673 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FE655274D2A8000B15C6F /* TrendsListingTableViewCell.xib */,
+				BF8FE654274D2A8000B15C6F /* TrendsListingTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFB50122274F667200735673 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF8DA6C02748FED100839B00 /* TrendsListingViewController.swift */,
+				BF8DA6C12748FED100839B00 /* TrendsListingViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BFB50123274F668500735673 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF8FE64B274D225400B15C6F /* TrendsListingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FCF3CD8F1CD32C6E010BF91F /* Pods */ = {
@@ -578,7 +626,7 @@
 				BF8DA6CF27490E5500839B00 /* GitHubEndpoint.swift in Sources */,
 				BF8FE64C274D225400B15C6F /* TrendsListingViewModel.swift in Sources */,
 				BF8DA68C2748FCCD00839B00 /* SceneDelegate.swift in Sources */,
-				BF8FE64E274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */,
+				BFB5011F274F579000735673 /* ViewControllerFactory.swift in Sources */,
 				BF8FE676274ED5F600B15C6F /* UIColor+EXT.swift in Sources */,
 				BF8DA6CB27490DF700839B00 /* Endpoint.swift in Sources */,
 			);
@@ -589,15 +637,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8DA6E4274A366600839B00 /* TrendsListingTests.swift in Sources */,
+				BFB50128274F67B800735673 /* TrendsListingViewModel.swift in Sources */,
 				BF8DA6D027490E5500839B00 /* GitHubEndpoint.swift in Sources */,
 				BF8DA6A12748FCCE00839B00 /* GitTrendsTests.swift in Sources */,
 				BF8DA6D427490E5B00839B00 /* NetworkManager.swift in Sources */,
 				BF8FE657274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */,
+				BFB50125274F670300735673 /* MockViewControllerFactory.swift in Sources */,
 				BF8DA6D227490E5800839B00 /* Endpoint.swift in Sources */,
 				BF8DA6DC274A351400839B00 /* MockNetworkManager.swift in Sources */,
 				BF8DA6D827490E8900839B00 /* GitHubRepoModel.swift in Sources */,
-				BF8FE64F274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */,
+				BFB5012A274F694300735673 /* UIColor+EXT.swift in Sources */,
 				BF8DA6C32748FED100839B00 /* TrendsListingViewController.swift in Sources */,
+				BFB50126274F67AA00735673 /* ViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,16 +657,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8DA6D527490E5C00839B00 /* NetworkManager.swift in Sources */,
+				BFB50129274F67B900735673 /* TrendsListingViewModel.swift in Sources */,
 				BF8DA6C42748FED100839B00 /* TrendsListingViewController.swift in Sources */,
 				BF8DA6DD274A351400839B00 /* MockNetworkManager.swift in Sources */,
 				BF8DA6AB2748FCCE00839B00 /* GitTrendsUITests.swift in Sources */,
 				BF8DA6D927490E8900839B00 /* GitHubRepoModel.swift in Sources */,
-				BF8FE650274D289C00B15C6F /* TrendsListingDataSource.swift in Sources */,
 				BF8FE658274D2A8000B15C6F /* TrendsListingTableViewCell.swift in Sources */,
 				BF8DA6AD2748FCCE00839B00 /* GitTrendsUITestsLaunchTests.swift in Sources */,
 				BF8DA6D127490E5500839B00 /* GitHubEndpoint.swift in Sources */,
 				BF8DA6D327490E5900839B00 /* Endpoint.swift in Sources */,
+				BFB5012B274F694300735673 /* UIColor+EXT.swift in Sources */,
 				BF8DA6E5274A366600839B00 /* TrendsListingTests.swift in Sources */,
+				BFB50127274F67AA00735673 /* ViewControllerFactory.swift in Sources */,
+				BFB5012C274F699900735673 /* MockViewControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

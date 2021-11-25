@@ -19,10 +19,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
+        
         let mainNav = UINavigationController()
         mainNav.setNavigationBarHidden(true, animated: false)
-        let homeVC = TrendsListingViewController()
-        mainNav.viewControllers = [homeVC]
+        
+        let vcFactory = ViewControllerFactory()
+        let trendsListingVC = vcFactory.makeTrendsListingViewController()
+        
+        mainNav.viewControllers = [trendsListingVC]
         window?.rootViewController = mainNav
         window?.makeKeyAndVisible()
     }

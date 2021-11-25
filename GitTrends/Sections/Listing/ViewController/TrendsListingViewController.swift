@@ -9,11 +9,6 @@ import UIKit
 import SkeletonView
 import Lottie
 
-class TrendsListingVCModel {
-    var id = 0
-    var isExpanded = false
-}
-
 class TrendsListingViewController: UIViewController {
     
     // MARK: Outlets And Properties
@@ -25,16 +20,14 @@ class TrendsListingViewController: UIViewController {
     
     var animationView: AnimationView!
     
-    private var trendsListingViewModel : TrendsListingViewModel!
+    var trendsListingViewModel: TrendsListingViewModel!
     let refreshControl = UIRefreshControl()
-    var trendsListingList = [TrendsListingVCModel]()
     var shouldAnimate = true
     
     // MARK: ViewController LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupViewModel()
     }
 }
 
@@ -55,20 +48,6 @@ extension TrendsListingViewController {
         self.tableView.delegate     = self
         
         self.tableView.reloadData()
-    }
-    
-    func setupLocalDataStash() {
-        trendsListingList = []
-        for gitTrendsModel in trendsListingViewModel.gitHubRepoData.items {
-            let trendModel          = TrendsListingVCModel()
-            trendModel.id           = gitTrendsModel.id
-            trendModel.isExpanded   = false
-            self.trendsListingList.append(trendModel)
-        }
-    }
-    
-    func setupViewModel(){
-        self.trendsListingViewModel = TrendsListingViewModel(networkManager: NetworkManager(), delegate: self)
     }
     
     func showRetryView() {
@@ -95,12 +74,15 @@ extension TrendsListingViewController {
     
     func setupLottieAnimation() {
         animationView = .init(name: "retry_json")
-        animationView!.frame = animationContainerView.bounds
-        animationView!.contentMode = .scaleAspectFit
-        animationView!.loopMode = .loop
-        animationView!.animationSpeed = 1
-        self.animationContainerView.addSubview(animationView!)
-        animationView!.play()
+        
+        if let animationView = animationView {
+            animationView.frame = animationContainerView.bounds
+            animationView.contentMode = .scaleAspectFit
+            animationView.loopMode = .loop
+            animationView.animationSpeed = 1
+            self.animationContainerView.addSubview(animationView)
+            animationView.play()
+        }
     }
 }
 
@@ -128,7 +110,7 @@ extension TrendsListingViewController: TrendsListingViewModelDelegate {
             self.hideRetryView()
             self.shouldAnimate      = false
             
-            self.setupLocalDataStash()
+            self.trendsListingViewModel.setupLocalDataStash()
             self.refreshControl.endRefreshing()
             self.tableView.reloadData()
         }
@@ -148,8 +130,8 @@ extension TrendsListingViewController: UITableViewDelegate {
         if let currentCell = tableView.cellForRow(at: indexPath) as? TrendsListingTableViewCell {
             let gitHubModel = self.trendsListingViewModel.gitHubRepoData.items[indexPath.item]
             
-            for i in 0..<self.trendsListingList.count {
-                let trendModel = self.trendsListingList[i]
+            for i in 0..<self.trendsListingViewModel.trendsListingList.count {
+                let trendModel = self.trendsListingViewModel.trendsListingList[i]
                 if trendModel.id == gitHubModel.id {
                     if trendModel.isExpanded {
                         currentCell.hideExtraData()
@@ -189,8 +171,8 @@ extension TrendsListingViewController: UITableViewDataSource {
             cell.hideSkeleton()
             
             let itemModel = self.trendsListingViewModel.gitHubRepoData.items[indexPath.item]
-            for i in 0..<self.trendsListingList.count {
-                let trendModel = self.trendsListingList[i]
+            for i in 0..<self.trendsListingViewModel.trendsListingList.count {
+                let trendModel = self.trendsListingViewModel.trendsListingList[i]
                 if trendModel.id == itemModel.id {
                     if trendModel.isExpanded {
                         cell.showExtraData(shouldAnimate: false)

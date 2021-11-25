@@ -21,7 +21,10 @@ class TrendsListingTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        trendsListingVC = TrendsListingViewController.init()
+        let mockVCFactory = MockViewControllerFactory()
+        trendsListingVC = mockVCFactory.makeTrendsListingViewController()
+        trendsListingVC.loadViewIfNeeded()
+        trendsListingVC.beginAppearanceTransition(true, animated: false)
     }
     
     override func tearDown() {
@@ -30,6 +33,7 @@ class TrendsListingTests: XCTestCase {
     }
 }
 
+// MARK: API Tests
 extension TrendsListingTests {
     
     func testGitTrendsApi() {
@@ -52,5 +56,34 @@ extension TrendsListingTests {
         })
         
         waitForExpectations(timeout: 3)
+    }
+}
+
+// MARK: View Controller Tests
+extension TrendsListingTests {
+    
+    func testListingVCOutlets() {
+        XCTAssertNotNil(trendsListingVC.menuBtn, "Menu Button should be connected")
+        XCTAssertNotNil(trendsListingVC.tableView, "Table View should be connected")
+        XCTAssertNotNil(trendsListingVC.retryButton, "Retry Button should be connected")
+        XCTAssertNotNil(trendsListingVC.retryView, "Retry View should be connected")
+        XCTAssertNotNil(trendsListingVC.animationContainerView, "Animation Container View should be connected")
+    }
+    
+    func testListingVCSetupUI() {
+        trendsListingVC.setupUI()
+        XCTAssert(trendsListingVC.menuBtn.title(for: .normal) == "")
+        XCTAssert(trendsListingVC.tableView.delegate != nil)
+        XCTAssert(trendsListingVC.tableView.dataSource != nil)
+    }
+    
+    func testListingVCShowRetryView() {
+        trendsListingVC.showRetryView()
+        XCTAssert(trendsListingVC.retryView.isHidden == false)
+    }
+    
+    func testListingVCHideRetryView() {
+        trendsListingVC.hideRetryView()
+        XCTAssert(trendsListingVC.retryView.isHidden == true)
     }
 }
